@@ -1,0 +1,242 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>QuoteRobot</title>
+
+    <style>
+        body{ 
+            font-family: 'Roboto', sans-serif; 
+            padding: 0;
+            margin: 0;
+        }
+        header .container{ 
+            padding: 20px;
+        }
+        header .container .logo{ 
+            width: 170px; 
+            float: left;
+        }
+        header .container .logo img{ width: 100%; }
+        header .container nav ul{ text-align: right; }
+        header .container nav ul li{ 
+            display: inline-block; 
+            margin: 0 20px;
+        }
+        header .hero{ 
+            background-image: url('images/bg.jpg'); 
+            background-size: cover;
+            height: 100%;
+            position: relative;
+        }
+        header .hero .content{
+            text-align: center;
+            padding: 0 150px;
+        }
+        header .hero .content h1{
+            padding: 100px 0 60px 0;
+            margin: 0;
+            font-size: 40px;
+        }
+        header .hero .content button{
+            background-color: #26c6cc;
+            color: #ffffff;
+            padding: 15px 30px;
+            border: none;
+            margin: 0 20px;
+            font-size: 14px;
+        }
+        header .hero .content a{
+            text-decoration: none;
+            color: #000;
+        }
+        header .hero .img-block{
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            border-bottom: 1px solid #000;
+            position: absolute;
+            bottom: 100px;
+            left: 0;
+            right: 0;
+        }
+        header .hero .img-block img{
+            width: 30%;
+            margin: 0 auto;
+        }
+        section{
+            text-align: center;
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            width: 70%;
+            margin: 0 auto;
+            padding: 80px 0;
+        }
+        .flex-container-reverse{
+            display: flex;
+            flex-direction: row-reverse;
+            width: 70%;
+            margin: 0 auto;
+            padding: 80px 0;
+        }
+        .flex-container .element, .flex-container-reverse .element{
+            text-align: left;
+        }
+        .flex-container .element img, .flex-container-reverse .element img{
+            width: 120px;
+        }
+        .flex-container .element:nth-child(1){
+            width: 30%;
+        }
+        .flex-container .element:nth-child(2){
+            width: 70%;
+        }
+        .flex-container-reverse .element:nth-child(1){
+            width: 30%;
+        }
+        .flex-container-reverse .element:nth-child(2){
+            width: 70%;
+        }
+        .flex-container-reverse .element img{
+            float: right;
+        }
+        .clients{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 80%;
+            margin: 0 auto;
+            justify-content: center;
+        }
+        .item{
+            width: auto;
+            margin: 20px;
+        }
+        .item img{
+            width: 35px;
+            float: left;
+        }
+        .item h5{
+            width: auto;
+            float: left;
+            margin: 15px;
+        }
+        hr{ 
+            width: 70%;
+            margin: 50px auto;
+            border: 0.5px solid #e8e8e8;
+        }
+        .grey{
+            background-color: #f3f3f3;
+        }
+        .items-container{
+            display: flex;
+            width: 70%;
+            margin: 20px auto;
+            justify-content: center;
+            padding: 50px 0;
+        }
+        .items-container .image{
+            width: 20%;
+            padding: 20px;
+        }
+        .items-container .image img{
+            width: 100%;
+        }
+        .items-container .quote{
+            width: 60%;
+            text-align: left;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li>Template</li>
+                        <li>Themes</li>
+                        <li>Tour</li>
+                        <li>Sign Up</li>
+                        <li>
+                            <button>Login</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hero">
+                <div class="content">
+                    <h1>Impress clients with beautiful<br>proposals, invoices & contracts</h1>
+                    <button>Get Started</button>
+                    <a href="">Watch a demo video</a>
+                    
+                </div>
+                <div class="img-block">
+                    <img src="images/robot.png" alt="">
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h2>Who is it for?</h2>
+                <div class="clients">
+                    <div class="item">
+                        <img src="images/icon1.png" alt="icon">
+                        <h5>Designers</h5>
+                    </div>
+                    <div class="item">
+                        <img src="images/icon2.png" alt="icon">
+                        <h5>Developers</h5>
+                    </div>
+                    <div class="item">
+                        <img src="images/icon3.png" alt="icon">
+                        <h5>Writers</h5>
+                    </div>
+                    <div class="item">
+                        <img src="images/icon4.png" alt="icon">
+                        <h5>Freelancers</h5>
+                    </div>
+                </div>
+                <hr>
+                <div class="flex-container">
+                    <div class="element">
+                        <img src="images/left.png" alt="">
+                    </div>
+                    <div class="element">
+                        <h3>Look Professional</h3>
+                        <p>Our professionally designed proposal, invoice and quote themes, help you look your best. Rather than using a word processor, use one of our hand crafted themes or create your own.</p>
+                    </div>
+                </div>
+                <div class="flex-container-reverse">
+                    <div class="element">
+                        <img src="images/right.png" alt="">
+                    </div>
+                    <div class="element">
+                        <h3>Know What To Charge</h3>
+                        <p>QuoteRobot mines line item data from your quotes, invoices, and proposals to help you know what to charge for every item, automatically.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="grey">
+                <div class="items-container">
+                    <div class="image">
+                        <img src="images/pic.png" alt="">
+                    </div>
+                    <div class="quote">
+                        <h4>QuoteRobot just wins more projects than creating proposals the old way. I can't believe I ever made quotes without it</h4>
+                        <span><strong>Rachel</strong> Web Designer at Pinterest</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+</body>
+</html>
